@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     let baseURL = "https://api.bitcoinaverage.com/ticker/"
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
+    var finalURL = ""
 
     @IBOutlet weak var bitcoinPriceLabel: UILabel!
     
