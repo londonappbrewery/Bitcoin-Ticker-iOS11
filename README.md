@@ -1,6 +1,9 @@
 # BitcoinTicker
-Learn to make iOS Apps 📱 | Project Stub | (Swift 2.0/Xcode 7) - Bitcoin Ticker App
+Learn to make iOS Apps 📱 | Project Stub | (Swift 3.0/Xcode 8) - Bitcoin Ticker App
 
 Download the starter project files as .zip and extract to your desktop. ^^
 
-Copyright 2015 London App Brewery
+## Finished App
+![Finished App](http://www.giphy.com/gifs/l0HlQGzz2MQCKIBI4)
+
+Copyright 2016 London App Brewery
