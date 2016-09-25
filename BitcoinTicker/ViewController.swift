@@ -14,81 +14,70 @@ class ViewController: UIViewController {
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     var finalURL = ""
 
+    //Pre-setup IBOutlets
     @IBOutlet weak var bitcoinPriceLabel: UILabel!
-    
     @IBOutlet weak var currencyPicker: UIPickerView!
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
 
+    
+    //TODO: Place your 3 UIPickerView delegate methods here
+    
+    
+    
 
+    
+    
+    
+//    
 //    //MARK: - Networking
 //    /***************************************************************/
 //    
-//    //Write the getWeatherData method here:
 //    func getWeatherData(url: String, parameters: [String : String]) {
 //        
-//        Alamofire.request(.GET, url, parameters: parameters)
+//        Alamofire.request(url, method: .get, parameters: parameters)
 //            .responseJSON { response in
 //                if response.result.isSuccess {
 //                    
-//                    print("Success! Got the weather data")
-//                    let weatherJSON:JSON = JSON(response.result.value!)
+//                    print("Sucess! Got the weather data")
+//                    let weatherJSON : JSON = JSON(response.result.value)
 //                    
-//                    self.updateWeatherData(weatherJSON)
+//                    self.updateWeatherData(json: weatherJSON)
 //                    
 //                } else {
-//                    
 //                    print("Error: \(response.result.error)")
-//                    self.cityLabel.text = "No Internet"
+//                    self.cityLabel.text = "Connection Issues"
 //                }
 //        }
+//        
 //    }
-    
-    
-    
-
-    
+//    
+//    
+//    
+//    
+//    
 //    //MARK: - JSON Parsing
 //    /***************************************************************/
 //    
-//    //Write the updateWeatherDataWithCityName method here:
-//    func updateWeatherData(json: JSON) {
+//    func updateWeatherData(json : JSON) {
 //        
-//        if let tempResult = json["main"]["temp"].double {
-//            
-//            weatherData.temperature = Int(round(tempResult) - 273.15)
-//            
-//            weatherData.city = json["name"].stringValue
-//            weatherData.condition = json["weather"][0]["id"].intValue
-//            
-//            weatherData.weatherIconName = weatherData.updateWeatherIcon(weatherData.condition)
-//            
-//            updateUIWithWeatherData()
-//            
-//        } else {
-//            cityLabel.text = "Weather Unavailable"
-//        }
+//        let tempResult = json["main"]["temp"].double
+//        
+//        weatherData.temperature = Int(round(tempResult!) - 273.15)
+//        weatherData.city = json["name"].stringValue
+//        weatherData.condition = json["weather"][0]["id"].intValue
+//        weatherData.weatherIconName = weatherData.updateWeatherIcon(condition: weatherData.condition)
+//        
+//        updateUIWithWeatherData()
 //    }
-    
-
-
-//    //MARK: - UI Updates
-//    /***************************************************************/
-//
 //    
-//    //Write the updateUIWithWeatherData method here:
-//    func updateUIWithWeatherData() {
-//        cityLabel.text = weatherData.city
-//        
-//        temperatureLabel.text = "\(weatherData.temperature)°"
-//        
-//        weatherIcon.image = UIImage(named: weatherData.weatherIconName)
-//    }
+
+
 
 
 }
