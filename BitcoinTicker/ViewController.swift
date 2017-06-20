@@ -43,20 +43,20 @@ class ViewController: UIViewController {
 //        Alamofire.request(url, method: .get, parameters: parameters)
 //            .responseJSON { response in
 //                if response.result.isSuccess {
-//                    
+//
 //                    print("Sucess! Got the weather data")
-//                    let weatherJSON : JSON = JSON(response.result.value)
-//                    
+//                    let weatherJSON : JSON = JSON(response.result.value!)
+//
 //                    self.updateWeatherData(json: weatherJSON)
-//                    
+//
 //                } else {
-//                    print("Error: \(response.result.error)")
-//                    self.cityLabel.text = "Connection Issues"
+//                    print("Error: \(String(describing: response.result.error))")
+//                    self.bitcoinPriceLabel.text = "Connection Issues"
 //                }
-//        }
-//        
+//            }
+//
 //    }
-//    
+//
 //    
 //    
 //    
