@@ -66,12 +66,13 @@ class ViewController: UIViewController {
 //    
 //    func updateWeatherData(json : JSON) {
 //        
-//        let tempResult = json["main"]["temp"].double
+//        if let tempResult = json["main"]["temp"].double {
 //        
 //        weatherData.temperature = Int(round(tempResult!) - 273.15)
 //        weatherData.city = json["name"].stringValue
 //        weatherData.condition = json["weather"][0]["id"].intValue
-//        weatherData.weatherIconName = weatherData.updateWeatherIcon(condition: weatherData.condition)
+//        weatherData.weatherIconName =    weatherData.updateWeatherIcon(condition: weatherData.condition)
+//        }
 //        
 //        updateUIWithWeatherData()
 //    }
